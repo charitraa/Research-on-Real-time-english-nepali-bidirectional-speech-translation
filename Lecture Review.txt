@@ -1,18 +1,102 @@
 ## All the literature review extracted from the downloaded research paper PDFs.
 
+1. Machine Translation Approaches for English-Nepali Translation
+
 Machine Translation (MT) has evolved significantly with advancements in Neural Machine Translation (NMT) and Transformer-based models, improving the translation of low-resource languages like Nepali. The reviewed studies explore different approaches to English-Nepali translation, comparing Statistical Machine Translation (SMT), Recurrent Neural Networks (RNNs), and Transformer-based models to identify the most effective techniques.
+
+2. Large Language Models for Translation Tasks
 
 Moslem et al. (2023) highlight the effectiveness of Large Language Models (LLMs) such as GPT-4 and BLOOM in translation tasks. While LLMs excel in high-resource languages, their performance declines for low-resource languages like Nepali due to limited training data. To address this, the study introduces adaptive machine translation techniques, including fuzzy matching, which retrieves previous translations to improve consistency and accuracy.
 
+3. A Comparative Analysis of SMT and NMT for English-Nepali Translation
+
 Acharya & Bal (2018) present a comparative analysis of SMT and NMT for English-Nepali translation. Their findings indicate that SMT performs better with smaller datasets, whereas NMT outperforms SMT when trained on larger datasets. Additionally, the study highlights key challenges, including word order differences (SVO in English vs. SOV in Nepali) and the morphological complexity of Nepali, which hinder accurate translation and emphasize the need for robust datasets and deep learning enhancements.
+
+4. Attention-based NMT Model for English-Nepali Translation
 
 Nemkul & Shakya (2021) propose an NMT model incorporating RNNs with Attention mechanisms for English-Nepali translation. The study compares different architectures, including LSTM, GRU, and BiLSTM, and finds that GRU + Attention achieves the best performance with a BLEU score of 12.3. The research highlights the role of attention mechanisms in improving translation accuracy by allowing the model to focus on essential words within a sentence, thereby enhancing contextual understanding.
 
+5. Real-Time Incremental Speech-to-Speech Translation
+
 Recent advancements in speech-to-speech translation and sequence modeling have significantly improved real-time language processing. The first study introduces a real-time incremental speech-to-speech (S2S) translation system using a Session Initiation Protocol (SIP)-based framework. Unlike traditional S2S models that require complete sentence processing, this system generates partial translations incrementally, reducing latency while maintaining translation quality. Experimental results highlight the trade-off between accuracy and response time, demonstrating that incremental translation provides faster, efficient cross-lingual communication.
+
+6.An Open-Source Toolkit for Sequence Modeling
 
 an open-source PyTorch-based toolkit for sequence modeling tasks like machine translation, summarization, and language modeling. Designed for efficiency, it supports distributed training across multiple GPUs, mixed-precision computation, and optimized inference techniques such as beam search. The study benchmarks FAIRSEQ against other frameworks, showing improved BLEU scores and enhanced performance for large-scale datasets, making it a crucial tool for research and production in natural language processing (NLP).
 
+7. Nepali Speech Recognition: Enhancing Accuracy with the "Ear Model"
+
 Nepali speech recognition, a relatively underexplored domain, by analyzing various speech processing approaches such as Hidden Markov Models (HMMs), Neural Networks, and Dynamic Time Warping (DTW). It introduces an alternative "Ear Model" that simulates human auditory perception, leveraging phoneme classification and syllable frequency analysis to enhance recognition accuracy. The study emphasizes the importance of language-specific adaptations and proposes techniques like Mel-Frequency Cepstral Coefficients (MFCCs) for feature extraction, making the model highly relevant for speech-based applications in Nepali.
+
+8. AI-Powered Real-Time Speech-to-Speech Translation for Virtual Meetings
 
 AI-Powered Real-Time Speech-to-Speech Translation for Virtual Meetings Using Machine Learning Models​
 , examines prior studies on speech-to-speech translation and their application in virtual meetings. It discusses the role of word embeddings in optimizing Automatic Speech Recognition (ASR) and speech translation (ST) models, leveraging transformer-based architectures like BERT and GPT to improve accuracy. The paper also highlights challenges in end-to-end speech translation for syntactically different languages and explores attention-based encoder-decoder models to address them. Additionally, it reviews Unsupervised Neural Machine Translation (UNMT) techniques and proposes improvements in Neural Machine Translation (NMT) through phrase alignment for better interpretability. Another key discussion revolves around training multilingual and multi-speaker text-to-speech (TTS) systems based on language families, which can enhance speech synthesis for real-time translations.
+
+9. Recurrent Neural Networks for English-Hindi Translation
+
+Recurrent Neural Networks (RNNs) are widely used in applications such as natural language processing (NLP) and computer vision. This study evaluates different RNN architectures for English-Hindi translation. The experiments reveal that GRU, LSTM, and Attention-based models significantly improve translation accuracy compared to SMT approaches.
+
+10. End-to-End LSTM Model for English-French Translation
+
+Deep Neural Networks (DNNs) perform well with large labeled datasets but struggle with sequence mapping tasks. This research presents an end-to-end LSTM approach that maps input sequences into fixed-dimensional vectors and generates translated outputs. Applied to English-French translation, this model outperforms SMT systems, achieving a BLEU score of 34.8, demonstrating strong long-sentence translation abilities.
+
+11. Open-Vocabulary Translation with Subword Units
+
+Neural Machine Translation (NMT) models typically operate with a fixed vocabulary, making OOV word translation challenging. This paper presents an approach to open-vocabulary translation using subword units. The model improves BLEU scores by 1.1–1.3 compared to dictionary-based methods, effectively handling rare words, names, and morphological variations.
+
+12. Transformer Architecture for Machine Translation
+
+Traditional sequence transduction models rely on RNNs or CNNs with attention mechanisms. This paper proposes the Transformer, an architecture based entirely on self-attention, allowing for parallel computation and faster training. It improves BLEU scores for English-German and English-French translations, establishing a new state-of-the-art benchmark in machine translation.
+
+13. Transformer vs RNN for Speech Processing Tasks
+
+Sequence-to-sequence models are widely used for speech processing tasks. This paper compares Transformers and RNNs in multiple ASR, ST, and TTS benchmarks, showing that Transformers achieve superior performance in 13/15 ASR tasks. The study also provides open-source Kaldi-style reproducible recipes for future research.
+
+14. Deep Learning-Based Nepali TTS Synthesis with FastPitch
+
+Deep learning-based TTS systems are gaining popularity, but low-resource languages like Nepali lack sufficient datasets. This paper explores the FastPitch acoustic model with HiFi-GAN vocoder for Nepali TTS synthesis, achieving MOS scores of 3.70 and 3.40 on two datasets, demonstrating the feasibility of deep-learning-based Nepali speech synthesis.
+
+15. English-Nepali Machine Translation in Legal Domain
+
+Nepali, a low-resource Indo-Aryan language, has limited digital resources, particularly in the legal sector. With increasing global migration and legal complexities, an English-Nepali Machine Translation (MT) system is necessary. A Neural Machine Translation (NMT) model with an encoder-decoder architecture was trained on a custom-built legal corpus of 125,000 sentences, achieving BLEU scores of 7.98 (Nepali → English) and 6.63 (English → Nepali). The study highlights challenges such as domain-specific terminology adaptation and suggests leveraging Large Language Models (LLMs) for in-context learning to improve translation consistency.
+
+16. Simultaneous Speech Translation (SimulST)
+
+SimulST aims to generate translations in real-time while processing continuous speech input. The primary challenges include handling long speech streams, balancing translation quality with latency, and the scarcity of annotated datasets. Various methods, including encoder-decoder architectures, in-context learning, and fuzzy matching, have been explored to improve performance. Experiments across five language pairs demonstrate that few-shot in-context learning surpasses conventional MT systems, particularly in high-resource languages.
+
+17. SimulTron: Real-Time Speech-to-Speech Translation System
+
+The study presents SimulTron, a novel speech-to-speech translation (S2ST) model that integrates real-time processing capabilities into the Translatotron framework. Enhancements include streaming operations and adjustable fixed delays. Evaluation results indicate that SimulTron outperforms Translatotron 2 in offline mode and improves real-time performance compared to Translatotron 1. It also achieves superior BLEU scores and lower latency on the MuST-C dataset. The system has been successfully deployed on Pixel 7 Pro, demonstrating feasibility for mobile-based real-time translation.
+
+18. Nepali Automatic Speech Recognition (ASR) System
+
+A deep learning-based Nepali ASR system was developed using MFCC (Mel-Frequency Cepstral Coefficients) as input features and trained on 1.55 million parameters with 157,000 audio datasets over 47 epochs. The best-performing model combined Convolutional Neural Networks (CNN), Residual Networks (ResNet), and Bidirectional Long Short-Term Memory (BiLSTM). The final model achieved a Character Error Rate (CER) of 17.06%, significantly improving Nepali speech recognition accuracy.
+
+19. Transformer-Based Nepali-English Translation System
+
+A Transformer-based model trained on a 20,000-sentence parallel corpus was designed to translate Nepali sentences into English while preserving syntax, grammar, and meaning. The system achieved 92.76% accuracy, surpassing previous sequence-to-sequence models. The research demonstrated how attention mechanisms improve translation quality, particularly for under-resourced language pairs.
+
+20. Speech-to-Speech Translation for Virtual Meetings
+
+A real-time speech-to-speech translation system was designed for virtual meetings, combining ASR, Machine Translation (MT), and Text-to-Speech (TTS). The model ensures seamless multilingual conversations and is optimized for applications such as business negotiations, international education, and travel. The system enhances communication efficiency in global business, tourism, and virtual learning platforms.
+
+21. Neural Networks for English-Nepali Sentence Translation
+
+A comparative study of Long Short-Term Memory (LSTM) and Gated Recurrent Units (GRU) models for English-to-Nepali translation was conducted. A GRU-based encoder-decoder model with attention and 512 hidden units achieved the highest BLEU score of 12.3, outperforming traditional NMT approaches.
+
+22. End-to-End ASR Model for Nepali Speech Recognition
+
+This research proposed a deep learning ASR system trained on the OpenSLR dataset. The model integrated Bidirectional LSTM, ResNet, and CNN architectures. CTC (Connectionist Temporal Classification) loss function was used for sequence-to-sequence alignment, achieving a Character Error Rate (CER) of 17.06%.
+
+23. Speech Recognition Models for Nepali Language 
+
+In the research paper titled "Nepali Speech Recognition Using Ear Model and Dictionary Checking" (2023), an Ear Model was proposed, simulating how the human ear and brain collaborate to recognize speech. This approach showed improved accuracy compared to conventional speech recognition methods. The system was further enhanced by incorporating Nepali Dictionary checking and using syllable frequency databases sourced from Nepali corpora, significantly boosting recognition performance.
+
+24. Incremental Speech-to-Speech Translation for Real-Time Communication 
+
+The paper "Real-Time Incremental Speech-to-Speech Translation using SIP" (2022) explored incremental speech-to-speech (S2S) translation systems. In this context, Session Initiation Protocol (SIP) frameworks were applied to facilitate real-time, two-way communication between speakers of different languages. Unlike traditional systems that require full sentence processing, this approach generates partial hypotheses incrementally, reducing latency while maintaining high translation accuracy. The study demonstrated that incremental translation can provide approximately half the latency of non-incremental methods, offering a significant advantage for real-time applications.
+
+25. Neural Network-Based Models for Machine Translation
+
+In the study titled "Performance of Recurrent Neural Network Models in Japanese-to-English Translation" (2021), Recurrent Neural Networks (RNNs), particularly those utilizing Gated Recurrent Units (GRU) and Long Short-Term Memory (LSTM) networks, showed promising results in machine translation tasks. The study observed that with minimal training on a small parallel corpus, the model performed remarkably well, adapting to grammatical complexities with ease. This success highlighted the potential of RNNs for language translation tasks and opened the door for their use in other language pairs.
